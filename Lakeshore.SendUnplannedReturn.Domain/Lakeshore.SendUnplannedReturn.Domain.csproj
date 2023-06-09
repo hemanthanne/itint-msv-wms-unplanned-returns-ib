@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SendSalesOrder\**" />
+    <EmbeddedResource Remove="SendSalesOrder\**" />
+    <None Remove="SendSalesOrder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lakeshore.SendUnplannedReturn.Dto\Lakeshore.SendUnplannedReturn.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
